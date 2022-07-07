@@ -1,0 +1,201 @@
+*{
+    box-sizing:border-box;
+}
+/* FUENTE DE LETRA DEL BODY */
+body{
+font-family: 'Poppins', sans-serif;;
+width:100%;
+}
+h1,h2,p{
+    font-weight:bold;
+}
+/* FUENTE DE LETRA DEL NAV */
+/*nav {
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: white;
+}*/
+/* Clase para poner COLOR a un TITULO */
+.algomas{
+    color: chocolate;
+}
+/* COLOR EN LA CAJA DE DIV DE NAVEGACION Y CONFIGURACION DE BORDES Y COLOR DE FONDO  */
+/*div {
+    background-color: chartreuse;
+    border:1px dotted red;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px #000;
+    transform:rotate(0deg);
+    margin: 20px;
+}*/
+/* MENU DE NAVEGACION */
+/*Trabajar con la clase de Boostrap  */
+.navbar-nav{
+    border-radius:15px;
+    box-shadow:7px 7px 11px 0px rgba(62, 89, 158, 0.55);
+}
+.menu_navegacion a{
+    padding:5px;
+    color:rgb(255, 255, 255);     
+}
+/*Es un pseudoelemnto para cambiar de color LOS LINK a 
+mover puede cambiar la LETRA de los LINK */
+.mover{
+    color:white;   
+    padding:5px;
+}
+/* Alinear los el bloque completo de link*/
+ul,li.enlinea{
+    margin-top:15px; 
+}
+/* alinea en link que esta en bloque */
+.enlinea{
+    display:inline; 
+}
+a.mover:hover{
+background-color:rgb(223, 174, 62);
+border-radius: 25px;
+}
+.espaciolink{
+    margin:25px;  
+}
+/* ARTICULO SOMOS */
+.article_somos{
+    text-align: center;
+    background-color: rgb(238, 164, 164);
+    border:1px dotted red;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px #000;
+    transform:rotate(0deg);
+}
+/* FORMULARIO DEL EJERCICIO*/
+.form_principal{
+    display:inline-block;
+    border: 10px double;
+    margin-right:20px;
+}
+/*IMPUT DEL FORMULARIO */
+.block1,input{
+    display:block;  
+}
+/* CONFIGURACION DEL CARUSEL O SLIDER */
+/*SLIDER*/
+#grupo1-slider{
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 5px;
+}
+#grupo1-slider > ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+}
+#grupo1-slider > ul.slider{
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;    
+}
+#grupo1-slider > ul.slider h1{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    left: 50%;
+    top: 100px;
+    transform: translate(-50%, -50%);
+}
+#grupo1-slider > ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:#fff;
+}
+#grupo1-slider > ul.slider li img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 67px;
+    box-shadow:6px 10px 7px 0px rgba(0, 186, 241, 0.38);
+}
+#grupo1-slider > ul.slider li:first-child {
+    opacity: 1; /*Mostramos el primer <li>*/
+}
+#grupo1-slider > ul.slider li:target {
+    opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+}
+#grupo1-slider > .menu{
+    text-align: center;
+    margin: 20px;
+}
+#grupo1-slider > .menu li{
+    display: inline-block;
+    text-align: center;
+}
+#grupo1-slider > .menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: navy;
+    padding: 10px;
+    width: 28px;
+    height: 29px;
+    font-size: 10px;
+    font-weight:bold;
+    border-radius: 100%;
+    margin-top: 10px;
+    border: 1px double;
+    box-shadow:0px 4px 12px 0px rgba(39, 103, 197, 0.75);
+}
+#grupo1-slider > .menu li a:hover{
+    transform:scale(0.9)  ;    
+}
+.margen_boton_enviar{
+    margin-top: 10px;
+}
+/* CONFIGURACION DEL FOOTER DEL FOOTER */
+footer{
+background-color: rgb(0, 0, 0);
+}
+footer p{
+    color: rgb(255, 255, 255);
+    }
+/* CONFIGURACION DEL FOOTER */
+.footer_config{
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px 3px #000; 
+}
+/* CONFIGURACION DEL MARGEN DEL PIE DE PAGINA EN PARRAFO(p) */
+.footer_config,p{
+    margin:10px;
+}
+.ul a{
+    color: white
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+    background-color:blue;
+    border-radius:35px;
+    box-shadow:0px 4px 12px 0px rgba(39, 103, 197, 0.75);
+}
+.ClaseImagenesSlider{
+    border-top-left-radius: 28px;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 48px;
+    box-shadow: 3px 3px 3px 3px rgba(39, 103, 197, 0.75); 
+
+}
